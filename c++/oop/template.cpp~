@@ -1,0 +1,31 @@
+#include<iostream>
+#include <typeinfo>
+using namespace std;
+
+template<class T>
+class type
+{
+	private:
+		T var;
+	public:
+		//type(T const x)var(x);
+		void show()
+		{
+			cout<<typeid(var).name()<<endl;
+		}
+};	
+			
+	
+int main()
+{
+	type<int> t;
+	cout<<t.show()<<endl;
+	type<float> t1;
+	cout<<t1.show()<<endl;
+	type<char> t2;
+	cout<<t2.show()<<endl;
+	type<bool> t3;
+	cout<<t3.show()<<endl;
+	
+	return 0;
+}

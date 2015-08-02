@@ -1,0 +1,13 @@
+fn main()
+{
+	let mut a=23;
+	a= match (1,a)
+	{
+		(1,4)=>a+1,
+		_=>a+2
+	};
+	println!("{}",a);
+		
+}
+
+

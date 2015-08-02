@@ -1,0 +1,8 @@
+(define (sum1 n)
+	(cond 
+		((null? n) (0))
+		((null? (cdr n)) (car n) )
+		(else (+ (car n) (sum1 (cdr n))))
+	)
+)
+(sum1 (list 1 2 3 4))

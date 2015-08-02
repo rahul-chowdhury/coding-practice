@@ -1,0 +1,10 @@
+class argtest
+{
+	public static void main(String args[])
+	{
+		for(int i=0;i<args.length;i++)
+			System.out.println(args[i]);
+		double sal=1000_.0;
+		System.out.println(sal);
+	}
+}

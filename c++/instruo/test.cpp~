@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+
+using namespace std;
+
+int main()
+{
+	long long int iter,red,blue;
+	scanf("%lld",&iter);
+	long long int girls[iter],tiles[iter];
+	for(long long int i=0;i<iter;i++)
+	{
+		scanf("%lld",&girls[i]);
+		scanf("%lld",&tiles[i]);
+	}
+	for(long long int i=0;i<iter;i++)
+	{
+		
+		red=(tiles[i]/(long long int)(pow(2,girls[i])))+1;
+		blue=tiles[i]-red;
+		printf("%lld %lld\n",red,blue);
+	}	
+	return 0;
+}

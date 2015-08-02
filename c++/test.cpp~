@@ -1,0 +1,20 @@
+#include<iostream>
+#include<limits.h>
+#include<stdio.h>
+#include<stdlib.h>
+using namespace std;
+
+
+#include <stdlib.h>
+struct node
+{
+	struct node *left,*right;
+	int data;
+};
+
+
+int main()
+{
+	
+    return 0;
+}

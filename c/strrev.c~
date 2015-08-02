@@ -1,0 +1,25 @@
+#include<stdio.h>
+int main()
+{
+	char str[100],*temp;
+	int x=0,i=0;
+	printf("enter string :");
+	scanf("%s",str);
+	temp=str;
+	
+	while(temp)
+	{
+		temp++;
+		x++;
+		printf("%c\n",*temp);
+	}
+	
+	temp--;
+	while(x!=0)
+	{
+		str[i++]=*(temp--);
+		x--;
+	}
+	printf("%s\n",str);
+	return 0;
+}

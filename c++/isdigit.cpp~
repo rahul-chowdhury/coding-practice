@@ -1,0 +1,9 @@
+#include<ctype.h>
+#include<iostream>
+using namespace std;
+int main()
+{
+char c='3',d='s';
+cout<<isdigit(c)<<endl;
+cout<<isdigit(d)<<endl;
+}

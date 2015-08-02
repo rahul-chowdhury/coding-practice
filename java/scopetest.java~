@@ -1,0 +1,26 @@
+import java.lang.*;
+class a
+{
+	int x=1;
+	void print()
+	{}
+}
+class b extends a
+{
+	int x=2;
+	void print()
+	{
+		System.out.println(super.x+x);
+	}
+}
+public class scopetest
+{
+public static void main(String args[])
+{
+
+a obj1;
+b obj2=new b();
+obj1=obj2;
+obj1.print();
+}
+}

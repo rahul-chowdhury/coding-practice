@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+
+
+int max_flip(int *a,int n)
+{
+	int sum0[n]=0,sum1[n]=0;
+	return 1;
+}
+
+int main()
+{
+	return 0;
+}

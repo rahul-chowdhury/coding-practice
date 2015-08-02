@@ -1,0 +1,82 @@
+import java.io.*;
+public class Linked_list
+{
+	private class Node
+	{
+		private int data;
+		private Node link;
+		public Node()
+		{
+			data=0;
+			link=null;
+		}
+	}
+	private Node head;
+	public Linked_list()
+	{
+		head=null;
+	}
+	public void insert(int value)
+	{
+		Node newnode=new Node();
+		newnode.data=value;
+		if(head==null)
+		{	
+			head=newnode;
+			return;
+		}			
+		Node temp=head;
+		while(temp.link!=null)
+		{
+			temp=temp.link;
+		}
+		temp.link=newnode;
+	}
+	public boolean delete(int x)
+	{
+		if(head==null)
+		{
+			System.out.println("empty list");
+			return false;
+		}
+		if(head.data==x)
+		{
+			head=head.link;
+			return true;
+		}
+		Node temp=head;
+		while(temp.link!=null)
+		{
+			if(temp.link.data==x)
+			{
+				temp.link=temp.link.link;
+				return true;
+			}				
+			temp=temp.link;
+		}
+		return false;
+	}
+	public void print_list()
+	{
+		Node temp=head;
+		if(temp==null)
+			return;
+		System.out.print("linked list: ");
+		while(temp!=null)
+		{
+			System.out.print(temp.data+",");
+			temp=temp.link;
+		}
+		System.out.println();
+	}	
+	
+}
+
+
+
+
+
+
+
+		
+

@@ -1,0 +1,10 @@
+(define(reverse1 l)
+	(
+		if (null? (cdr l))
+			(car l)
+		(list (reverse1 (cdr l)) (car l))
+	)
+)
+(define l (list 1 2 3 4))
+(reverse1 l)
+(reverse1 '(1 2 3 4))

@@ -1,0 +1,18 @@
+import java.io.*;
+public class Implement_linked_list
+{
+	public static void main(String args[])throws IOException
+	{
+		Linked_list list=new Linked_list();
+		list.insert(1);
+		list.insert(2);
+		list.insert(3);
+		list.insert(5);
+		list.print_list();
+		list.delete(3);
+		list.delete(6);
+		list.print_list();
+		list.delete(1);
+		list.print_list();
+	}
+}
